@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Hasil Uji Sungai Cidepit Hulu</title>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> 
+		
+		
+	<!--	<style type="text/css">${demo.css}	</style> -->
+		<script type="text/javascript">
+$(function () {
+    $('#cidepit_hulu').highcharts({
+        chart: {
+            type: 'line',
+			backgroundColor: "#e5efe9"
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: 'HASIL UJI SUNGAI CIDEPIT HULU'
+        },
+        xAxis: {
+            categories: ['2010-I', '2010-II', '2011-I', '2011-II', '2012-I', '2012-II', '2013-I', '2013-II', '2014-I', '2014-II']
+        },
+		legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlight: 'middle',
+			borderWidth: 0
+		},
+        yAxis: {
+            title: {
+                text: 'Hasil Pengujian'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+          
+			}, {
+			name: '	Total Suspended Solid (TSS)',
+			data: [24,56,32,36,59,36,34,19.5,50,104]
+			}, {
+			name: 'Baku Mutu TSS',	
+			data: [50,50,50,50,50,50,50,50,50,50],
+			visible: false
+			}, {
+			name: 'Insitu (pH)',
+			data: [6.6,6.8,7,6.8,5.9,5.8,7.8,8.55,6.7,7.8]												
+			}, {
+            name: 'Baku Mutu Atas pH*',
+            data: [9,9,9,9,9,9,9,9,9,9],
+			visible : false
+		    }, {
+            name: 'Baku Mutu Bawah pH*',
+            data: [6,6,6,6,6,6,6,6,6,6],
+			visible : false
+			}, {
+			name: 'BOD',
+			data: [2.6,3.5,3.8,2.7,4.2,2.7,2.0,17.87,9,7]
+			}, {
+			name: 'Baku Mutu BOD',	
+			data: [2,2,2,2,2,2,2,2,2,2],
+			visible: false
+			}, {
+			name: 'COD',
+			data: [6.6,12,8.6,5.6,12,5.6,4.85,58.99,17,13]
+			}, {
+			name: 'Baku Mutu COD',
+			data: [10,10,10,10,10,10,10,10,10,10],
+			visible: false
+			}, {
+			name: 'Total Phospate (PO4)',
+			data: [0.045,0.187,0.034,0.036,0.005,0.036,0.55,0.26,0.001,0.04]
+			}, {
+			name: 'Baku Mutu PO4',	
+			data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2],
+			visible: false
+			}, {
+			name: 'Total Coliform (ribuan)',
+			data: [30,37,7.2,41,28,71,1.9,2.2,1.5,1.4]
+			}, {
+			name: 'Baku Mutu Total Coliform',	
+			data: [10,10,10,10,10,10,10,10,10,10],
+			visible: false
+			}, {
+			name: 'Detergent (MBAS)',	
+			data: [0.209,0.02,0.083,0.068,0.02,0.099,0.2456,0.2456,134,106]
+			}, {
+			name: 'Baku Mutu Detergent (MBAS)',	
+			data: [200,200,200,200,200,200,200,200,200,200],
+			visible: false
+			
+		
+        }
+		]
+    });
+});
+		</script>
+		
+		<script type="text/javascript">
+$(function () {
+    $('#cidepit_tengah').highcharts({
+        chart: {
+            type: 'line',
+			backgroundColor: "#e5efe9"
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: 'HASIL UJI SUNGAI CIDEPIT TENGAH'
+        },
+		legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlight: 'middle',
+			borderWidth: 0
+		},
+        xAxis: {
+            categories: ['2010-I', '2010-II', '2011-I', '2011-II', '2012-I', '2012-II', '2013-I', '2013-II', '2014-I', '2014-II']
+        },
+        yAxis: {
+            title: {
+                text: 'Hasil Pengujian'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+			
+			}, {
+			name: '	Total Suspended Solid (TSS)',
+			data: [42,74,40,45,145,45,51,62.3,60,4]
+			}, {
+			name: 'Baku Mutu TSS',	
+			data: [50,50,50,50,50,50,50,50,50,50],
+			visible: false
+			}, {
+			name: 'Insitu (pH)',
+			data: [7.8,6.7,6.6,6.6,5.7,6.53,7.5,8.21,7,7.5]												
+			}, {
+            name: 'Baku Mutu Atas pH*',
+            data: [9,9,9,9,9,9,9,9,9,9],
+			visible : false
+		    }, {
+            name: 'Baku Mutu Bawah pH*',
+            data: [6,6,6,6,6,6,6,6,6,6],
+			visible : false
+			}, {
+			name: 'BOD',
+			data: [3.8,4.2,6.4,4.7,4.6,4.7,3.00,16.57,11,7]
+			}, {
+			name: 'Baku Mutu BOD',	
+			data: [2,2,2,2,2,2,2,2,2,2,],
+			visible: false
+			}, {
+			name: 'COD',
+			data: [9.5,11,14.4,9.6,20,9.6,6.3,54.69,20,14]
+			}, {
+			name: 'Baku Mutu COD',
+			data: [10,10,10,10,10,10,10,10,10,10],
+			visible: false
+			}, {
+			name: 'Total Phospate (PO4)',
+			data: [0.053,0.257,0.072,0.074,0.434,0.074,0.44,0.14,0.01,0.02]
+			}, {
+			name: 'Baku Mutu PO4',	
+			data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2],
+			visible: false
+			}, {
+			name: 'Total Coliform (ribuan)',
+			data: [42,42,44,22,46,51,2.3,1.9,1.6,1.5]
+			}, {
+			name: 'Total Coliform',	
+			data: [10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,],
+			visible: false
+			}, {
+			name: 'Detergent (MBAS)',	
+			data: [0.167,0.02,0.107,0.098,0.02,0.098,0.2456,0.2456,162,72]
+			}, {
+			name: 'Baku Mutu Detergent (MBAS)',	
+			data: [200,200,200,200,200,200,200,200,200,200],
+			visible: false
+			
+			}	
+		]
+    });
+});
+		</script>	
+		
+		<script type="text/javascript">
+$(function () {
+    $('#cidepit_hilir').highcharts({
+        chart: {
+            type: 'line',
+			backgroundColor: "#e5efe9"
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: 'HASIL UJI SUNGAI CIDEPIT HILIR'
+        },
+        xAxis: {
+            categories: ['2010-I', '2010-II', '2011-I', '2011-II', '2012-I', '2012-II', '2013-I', '2013-II', '2014-I', '2014-II']
+        },
+        yAxis: {
+            title: {
+                text: 'Hasil Pengujian'
+            }
+        },
+		legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlight: 'middle',
+			borderWidth: 0
+		},
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+      		
+			}, {
+			name: '	Total Suspended Solid (TSS)',
+			data: [62,100,32,34,38,34,25,12.2,222,10]
+			}, {
+			name: 'Baku Mutu TSS',	
+			data: [50,50,50,50,50,50,50,50,50,50],
+			visible: false
+			}, {
+			name: 'Insitu (pH)',
+			data: [6.4,6.6,6.9,6.9,6.49,6.41,7.6,7.32,6.8,7]												
+			}, {
+            name: 'Baku Mutu Atas pH*',
+            data: [9,9,9,9,9,9,9,9,9,9],
+			visible : false
+		    }, {
+            name: 'Baku Mutu Bawah pH*',
+            data: [6,6,6,6,6,6,6,6,6,6],
+			visible : false
+			}, {
+			name: 'BOD',
+			data: [4.3,4.4,10,4,2.6,4,3.30,21.17,10,6]
+			}, {
+			name: 'Baku Mutu BOD',
+			data: [2,2,2,2,2,2,2,2,2,2],
+			visible: false
+			}, {
+			name: 'COD',
+			data: [11,12,23.6,8.7,7.2,8.7,6.53,69.89,19,11]
+			}, {
+			name: 'Baku Mutu COD',
+			data: [10,10,10,10,10,10,10,10,10,10],
+			visible: false
+			}, {
+			name: 'Total Coliform (ribuan)',
+			data: [66,170,36,24,47,47,2.1,2.2,1.6,9]
+			}, {
+			name: 'Total Coliform',	
+			data: [10000,10000,10000,10000,10000,10000,10000,10000,10000,10000],
+			visible: false
+			}, {
+			name: 'Total Phospate (PO4)',
+			data: [0.045,0.226,0.027,0.028,0.221,0.028,0.57,0.16,0.02,0.04]
+			}, {
+			name: 'Baku Mutu PO4',	
+			data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2],
+			visible: false
+			}, {
+			name: 'Detergent (MBAS)',	
+			data: [0.153,0.02,0.07,0.068,0.068,0.068,0.2456,0.2456,106,78]
+			}, {
+			name: 'Baku Mutu Detergent (MBAS)',	
+			data: [200,200,200,200,200,200,200,200,200,200],
+			visible: false
+			
+        }
+		]
+    });
+});
+		</script>	
+
+					
+	</head>
+	<body>
+	
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<!--
+<script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+<script src="js/modules/data.js"></script>
+-->
+<div id="cidepit_hulu" style="min-width: 310px; height: 200px; margin: 5px, 0px, 0px, 0px"></div>
+<br>
+<div id="cidepit_tengah" style="min-width: 310px; height: 200px; margin: 5px, 0px, 0px, 0px"></div>
+<br>
+<div id="cidepit_hilir" style="min-width: 310px; height: 200px; margin: 5px, 0px, 0px, 0px"></div>
+	</body>
+</html>

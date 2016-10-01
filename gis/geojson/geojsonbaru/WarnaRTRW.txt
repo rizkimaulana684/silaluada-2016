@@ -1,0 +1,75 @@
+bogor.setStyle(function(feature) {
+    var color = 'red';
+	var color1 = '#CFCDA6';
+	rcn=feature.getProperty('RENCANA_1');
+				  nm=feature.getProperty('NAMA');
+				  luas=feature.getProperty('HECTARES');
+			 					  //alert(lat);
+"Rumah Rendah" ='#F8F6B2';
+"Rumah Sedang" ='#FADE6D';
+"Rumah Tinggi" ='#FAC905';
+
+
+"Sempadan Sungai" ='#3F810A';
+"Fasilitas Kesehatan" ='#BED2FF';
+"Fasilitas OR dan Rekreasi" ='#6677CD';
+"Fasilitas Pendidikan" ='#004DA8';
+"Fasilitas Peribadatan" ='#00A884';
+"Fasum Fasos" ='#0070FF';
+"Hutan Kota" ='#267300';
+"Industri" ='#57822F';
+"Jasa" ='#900000';
+"Militer"='#CDAA66';
+"Pemerintahan" ='#8400A8';
+"Perdagangan" ='#900000';
+"Pertanian" ='#BEFFE8';
+"Prasarana Kota" ='#0070FF';
+"Pusat WP" ='#FF0000';
+
+"RTH" ='#4CE600';
+"RTH Infrastruktur" ='#4CE600';
+"RTH Kebun Penelitian" ='#4CE600';
+"RTH Taman" ='#4CE600';
+"RTH Taman Kota" ='#4CE600';
+"RTH Taman Lingkungan" ='#4CE600';
+
+"Sempadan Jalan Tol" ='#35890C';
+"Sempadan Rel KA" ='#35890C';
+"Sempadan SUTT" ='#35890C';
+"Sempadan Saluran" ='#35890C';
+"Sempadan Sungai" ='#35890C';
+
+"Sungai" ='#99FCD9';
+"TPU" ='#BCF45B';
+"Transportasi" ='#B66027';
+"Utilitas Kota" ='#394EB8';
+
+
+==========================================
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 0,
+        "stroke-opacity": 0.4,
+        "fill": "#BEFFE8",
+        "fill-opacity": 0.4,
+        "OBJECTID_1": 197,
+        "OBJECTID_2": 198,
+        "OBJECTID": 219,
+        "FID_00_POL": 240,
+        "RENCANA_1": "Pertanian",
+        "NAMA": "Kebun Penelitian",
+        "SHAPE_LENG": 3597.5365993,
+        "BUFFERDIS": 0,
+        "RENCANA": null,
+        "SHAPE_LE_1": 3596.70494687,
+        "PERIMETER": 132719.959272,
+        "AREA": 523978716.164,
+        "ACRES": 83.5340010209,
+        "HECTARES": 33.805010852,
+        "SHAPE_LE_2": 3371.08669192,
+        "SHAPE_AREA": 338050.063711
+===================================================
+
+		"description":"RUMAH RENDAH<br>Luas: 10.4998974179 Ha"
+===============================================
+

@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Hasil Uji Sungai Cisindangbarang Hulu</title>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> 
+		
+		
+	<!--	<style type="text/css">${demo.css}	</style> -->
+		<script type="text/javascript">
+$(function () {
+    $('#cisindangbarang_hulu').highcharts({
+        chart: {
+            type: 'line',
+			backgroundColor: "#e5efe9"
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: 'HASIL UJI SUNGAI CISINDANG BARANG HULU'
+        },
+        xAxis: {
+            categories: ['2010-I', '2010-II', '2011-I', '2011-II', '2012-I', '2012-II', '2013-I', '2013-II', '2014-I', '2014-II']
+        },
+			legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlight: 'middle',
+			borderWidth: 0
+		},
+		
+        yAxis: {
+            title: {
+                text: 'Hasil Pengujian'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+				name: 'Total Suspended Solid(TSS)',
+				data: [3,32,16,24,5,24,21,15.6,14,6]
+			}, {
+				name: 'Baku Mutu TSS',	
+				data: [50,50,50,50,50,50,50,50,50,50,],
+				visible: false
+			}, {
+				name: ' Insitu (pH)',
+				data: [7.3,7.2,7.4,6.8,6.7,7.16	,8.1,6.35,7.2,7.1]
+			}, {
+				name: 'Baku Mutu Atas PH',	
+				data: [9,9,9,9,9,9,9,9,9,9],
+				visible: false
+			}, {
+				name: 'Baku Mutu Bawah PH',	
+				data: [6,6,6,6,6,6,6,6,6,6,],
+				visible: false
+			}, {
+				name: 'BOD',
+				data: [2.6,3.6,6.4,3.1,3.3,3.1,2.70,20.9,6,6]
+			}, {
+				name: 'Baku Mutu BOD',	
+				data: [3,3,3,3,3,3,3,3,3,3,],
+				visible: false
+			}, {
+				name: 'COD',
+				data: [6.5,11,14.8,8.2,8.8,8.2,14.57,68.99,11,12]
+			}, {
+				name: 'Baku Mutu COD',	
+				data: [25,25,25,25,25,25,25,25,25,25],
+				visible: false
+			}, {
+				name: 'Total Phospate (PO4)',
+				data: [0.095,0.339,0.078,0.088,0.349,0.088,0.45,0.23,0.04,0.03]
+			}, {
+				name: 'Baku Mutu PO4',	
+				data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,],
+				visible: false
+			}, {
+				name: 'Total Coliform (ribuan)',
+				data: [31,47,43,54,22,140,1.9,1.6,1.0,1.0]
+			}, {
+				name: 'Baku Mutu Total Colifrom (Ribuan)',	
+				data: [5,5,5,5,5,5,5,5,5,5],
+				visible: false
+			}, {
+				name: 'Detergent (MBAS)',
+				data: [0.087,0.02,0.176,0.188,0.053,0.188,0.2456,0.2456,159,115]
+			}, {
+				name: 'Baku Mutu Detergent (MBAS)',	
+				data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2],
+				visible: false
+        }
+		]
+    });
+});
+		</script>		
+		<script type="text/javascript">
+$(function () {
+    $('#cisindangbarang_tengah').highcharts({
+        chart: {
+				type: 'line',
+				backgroundColor: "#e5efe9"
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: 'HASIL UJI SUNGAI CISINDANG BARANG TENGAH'
+        },
+        xAxis: {
+            categories: ['2010-I', '2010-II', '2011-I', '2011-II', '2012-I', '2012-II', '2013-I', '2013-II', '2014-I', '2014-II']
+        },
+		legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlight: 'middle',
+			borderWidth: 0
+		},
+        yAxis: {
+            title: {
+                text: 'Hasil Pengujian'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+				name: 'Total Suspended Solid (TSS)',	
+				data: [5,9.2,21,35,9,35,27,38.92,8,10]
+			}, {
+				name: 'Baku Mutu TSS',	
+				data: [50,50,50,50,50,50,50,50,50,50,],
+				visible: false
+			}, {
+				name: 'Insitu (pH)',
+				data: [7.3,7.1,7.4,6.7,6.8,6.4,7.8,8.27,7.2,7.3]
+			}, {
+				name: 'Baku Mutu Atas PH',	
+				data: [9,9,9,9,9,9,9,9,9,9],
+				visible: false
+			}, {
+				name: 'Baku Mutu Bawah PH',	
+				data: [6,6,6,6,6,6,6,6,6,6,],
+				visible: false
+			}, {
+				name: 'BOD',
+				data: [2.9,3.8,7.2,3.1,2.6,3.1,2.40,37.43,12,6]
+			}, {
+				name: 'Baku Mutu BOD',	
+				data: [3,3,3,3,3,3,3,3,3,3,],
+				visible: false
+			}, {
+				name: 'COD',	
+				data: [7.3,12,16.4,7.4,8.1,7.4,36.52,123.55,20,11]
+			}, {
+				name: 'Baku Mutu COD',	
+				data: [25,25,25,25,25,25,25,25,25,25],
+				visible: false
+			}, {
+				name: 'Total Phosphate (PO4)',	
+				data: [0.123,0.429,0.096,0.086,2.98,0.086,0.48,0.48,0.03,0.04]
+			}, {
+				name: 'Baku Mutu PO4',	
+				data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,],
+				visible: false
+			}, {
+				name: 'Total Coliform (ribuan)',
+				data: [47,100,220,76,34,86,1.5,2.4,1.5,1.5]
+			}, {
+				name: 'Baku Mutu Total Coliform (ribuan)',	
+				data: [5,5,5,5,5,5,5,5,5,5],
+				visible: false
+			}, {
+				name: 'Detergent (MBAS)',
+				data: [0.08,0.02,0.212,0.1,0.02,0.128,0.2456,0.2456,171,171]
+			}, {
+				name: 'Baku Mutu Detergent (MBAS)',	
+				data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2],
+				visible: false
+		}
+		]
+    });
+});
+			</script>
+		<script type="text/javascript">
+		$(function () {
+		$('#cisindangbarang_hilir1').highcharts({
+			chart: {
+				type: 'line',
+				backgroundColor: "#e5efe9"
+			},
+			title: {
+				text: ''
+			},
+			subtitle: {
+				text: 'HASIL UJI SUNGAI CISINDANG BARANG HILIR'
+			},
+			legend: {
+				layout: 'vertical',
+				align: 'right',
+				verticalAlight: 'middle',
+				borderWidth: 0
+			},
+			xAxis: {
+				categories: ['2010-I', '2010-II', '2011-I', '2011-II', '2012-I', '2012-II', '2013-I', '2013-II', '2014-I', '2014-II']
+			},
+			yAxis: {
+				title: {
+					text: 'Hasil Pengujian'
+				}
+			},
+			plotOptions: {
+				line: {
+					dataLabels: {
+						enabled: true
+					},
+					enableMouseTracking: true
+				}
+			},
+			series: [{
+				name: '	Total Suspended Solid (TSS)',
+				data: [8,38,33,42,10,42,20,16.5,14,24]
+			}, {
+				name: 'Baku Mutu TSS',	
+				data: [50,50,50,50,50,50,50,50,50,50,],
+				visible: false											
+			}, {
+				name: 'Insitu (pH)', 
+				data: [7.5,7.2,7.5,7,6.9,6.6,8.0,7.58,7.1,7.5]
+			}, {
+				name: 'Baku Mutu Atas PH',	
+				data: [9,9,9,9,9,9,9,9,9,9],
+				visible: false
+			}, {
+				name: 'Baku Mutu Bawah PH',	
+				data: [6,6,6,6,6,6,6,6,6,6,],
+				visible: false
+			}, {
+				name: 'BOD',
+				data: [3.6,4.1,6,4.4,3.1,4.4,2.10,44.41,6,5]
+			}, {
+				name: 'Baku Mutu BOD',	
+				data: [3,3,3,3,3,3,3,3,3,3],
+				visible: false
+			}, {
+				name: 'COD',	
+				data: [9,12,14.2,8.6,11,8.6,267.391,146.58,12,11]
+			}, {
+				name: 'Baku Mutu COD',	
+				data: [25,25,25,25,25,25,25,25,25,25],
+				visible: false
+			}, {
+				name: 'Total Phospate (PO4)',
+				data: [0.121,0.234,0.074,0.086,0.515,0.086,0.58,0.21,0.02,0.02]
+			}, {
+				name: 'Baku Mutu PO4',	
+				data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,],
+				visible: false
+			}, {
+				name: 'Total Coliform (ribuan)',	
+				data: [90,170,51,11,41,160,1.9,1.9,1.2,1.0]
+			}, {
+				name: 'Baku Mutu Total Coliform (ribuan)',	
+				data: [5,5,5,5,5,5,5,5,5,5],
+				visible: false
+			}, {
+				name: 'Detergent (MBAS)',	
+				data: [0.105,0.02,0.078,0.088,0.02,0.088,0.2456,0.2456,72,57]
+			}, {
+				name: 'Baku Mutu Detergent (MBAS)',	
+				data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2],
+				visible: false
+		}
+		]
+    });
+});
+		</script>		
+		</head>
+	<body>
+	
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<!--
+<script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+<script src="js/modules/data.js"></script>
+	-->
+<div id="cisindangbarang_hulu" style="min-width: 310px; height: 200px; margin: 5px, 0px, 0px, 0px"></div>
+<br>
+<div id="cisindangbarang_tengah" style="min-width: 310px; height: 200px; margin: 5px, 0px, 0px, 0px"></div>
+<br>
+<div id="cisindangbarang_hilir1" style="min-width: 310px; height: 200px; margin: 5px, 0px, 0px, 0px"></div>
+<br>
+	</body>
+</html>

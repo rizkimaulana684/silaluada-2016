@@ -1,0 +1,22 @@
+$bogorselatan = 'kelurahan_id = "1" AND kelurahan_id = "2" AND kelurahan_id = "3" AND kelurahan_id = "4" AND kelurahan_id = "5" AND kelurahan_id = "6" AND kelurahan_id = "7" AND kelurahan_id = "8" AND kelurahan_id = "9" AND kelurahan_id = "10" AND kelurahan_id = "11" AND kelurahan_id = "12" AND kelurahan_id = "13" AND kelurahan_id = "14" AND kelurahan_id = "15" AND kelurahan_id = "16"'
+
+$bogorutara = 'kelurahan_id = "17" AND kelurahan_id = "18" AND kelurahan_id = "19" AND kelurahan_id = "20" AND kelurahan_id = "21" AND kelurahan_id = "22" AND kelurahan_id = "23" AND kelurahan_id = "24"'
+
+
+BOGOR SELATAN 1
+SELECT *, lng AS x, lat AS y  FROM mata_air WHERE kelurahan_id IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16')
+
+BOGOR UTARA 2
+$sql = 'SELECT *, lng AS x, lat AS y  FROM mata_air WHERE kelurahan_id IN ("17","18","19","20","21","22","23","24")'
+
+BOGOR TENGAH 3
+$sql = 'SELECT *, lng AS x, lat AS y  FROM mata_air WHERE kelurahan_id IN ("25","26","27","28","29","30","31","32","33","34","35")';
+
+BOGOR TIMUR 4
+$sql = 'SELECT *, lng AS x, lat AS y  FROM mata_air WHERE kelurahan_id IN ("36","37","38","39","40","41")'
+
+TANAH SAREAL 5
+$sql = 'SELECT *, lng AS x, lat AS y  FROM mata_air WHERE kelurahan_id IN ("42","43","44","45","46","47","48","49","50","51","52")'
+
+BOGOR BARAT 6
+$sql = 'SELECT *, lng AS x, lat AS y  FROM mata_air WHERE kelurahan_id IN ("53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68")'

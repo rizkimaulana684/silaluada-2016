@@ -1,0 +1,343 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Hasil Uji Mutu Air Sungai</title>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+<script type="text/javascript">
+$(function () {
+    $('#cianten_hulu').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: 'Hasil Uji Mutu Air Sungai Cianten Hulu'
+        },
+        xAxis: {
+            categories: [
+						'2010-I Inlet', '2010-I outlet', '2010-II Inlet', '2010-II Outlet',
+						'2011-I outlet', '2011-II Outlet',
+						'2012-I outlet', '2012-II Outlet',
+						'2013-I outlet', '2013-II Outlet',
+						'2014-I Inlet', '2014-I outlet', '2014-II Inlet', '2014-II Outlet'
+						]
+        },
+			legend: 
+		{
+			layout : 'vertical',
+			align: 'right',
+			verticalAlign :'middle',
+			borderWidth : 0
+		},
+        yAxis: {
+            title: {
+                text: 'Hasil Uji'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: 
+		[
+			{
+				name: 'Total Suspended Solid(TSS)',
+				data: [5,50,16,26,5,26,21,58.2,12,98]
+			}, 
+			{
+				name: 'Baku Mutu TSS',
+				data: [50,50,50,50,50,50,50,50,50,50],
+				visible: false
+			},
+			{
+				name: 'Insitu(PH)',
+				data: [7.2,6.9,7.1,6.8,6.4,6.82,7.7,6.66,7.2,7.6]
+			},
+			{
+				name: 'Baku Mutu Atas PH',
+				data: [7,7,7,7,7,7,7,7,7,7],
+				visible: false
+			},	
+			{
+				name: 'Baku Mutu Bawah PH',
+				data: [6,6,6,6,6,6,6,6,6,6],
+				visible: false
+			},			
+			{
+				name: 'BOD',
+				data: [3.2,4.4,4,4.2,3.1,4.2,2.0,33.65,12,7]
+			}, 
+			{
+				name: 'Baku Mutu BOD',
+				data: [3,3,3,3,3,3,3,3,3,3],
+				visible: false
+			},	
+			{
+				name: 'COD',
+				data: [8.1,8,8,10,8.6,10,9.57,9.58,21,14]
+			}, 
+			{
+				name: 'Baku Mutu COD',
+				data: [25,25,25,25,25,25,25,25,25,25],
+				visible: false
+			},	
+			{
+				name: 'Total Phosphate (PO₄₋)',
+				data: [0.117,0.686,0.124,0.126,5.41,0.126,0.077,0.29,0.02,0.04]
+			},
+			{
+				name: 'Baku Mutu Total Phosphate (PO₄₋)',
+				data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2],
+				visible: false
+			},
+			
+			{
+				name: 'Total Coliform(Ribuan)',
+				data: [17,120,14,8.2,11,120,2.2,2.1,1.9,1.5]	
+			},
+			{
+				name: 'Baku Mutu Total Coliform(Ribuan)',
+				data: [5,5,5,5,5,5,5,5,5,5],
+				visible: false
+			}
+		]
+    });
+});
+</script>
+<script type="text/javascript">
+$(function () {
+    $('#cianten_tengah').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: 'Hasil Uji Mutu Air Sungai Cianten Tengah'
+        },
+        xAxis: {
+            categories: [
+						'2010-I Inlet', '2010-I outlet', '2010-II Inlet', '2010-II Outlet',
+						'2011-I outlet', '2011-II Outlet',
+						'2012-I outlet', '2012-II Outlet',
+						'2013-I outlet', '2013-II Outlet',
+						'2014-I Inlet', '2014-I outlet', '2014-II Inlet', '2014-II Outlet'
+						]
+        },
+			legend: 
+		{
+			layout : 'vertical',
+			align: 'right',
+			verticalAlign :'middle',
+			borderWidth : 0
+		},
+        yAxis: {
+            title: {
+                text: 'Hasil Uji'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: 
+		[
+			{
+				name: 'Total Suspended Solid(TSS)',
+				data: [11,8,23,32,12,32,15,23.2,24,150]
+			}, 
+			{
+				name: 'Baku Mutu TSS',
+				data: [50,50,50,50,50,50,50,50,50,50],
+				visible: false
+			},
+			{
+				name: 'Insitu(PH)',
+				data: [7.2,6.9,6.9,6.7,6.2,6.43,7.5,7.58,6.8,7.6]
+			},
+			{
+				name: 'Baku Mutu Atas PH',
+				data: [7,7,7,7,7,7,7,7,7,7],
+				visible: false
+			},	
+			{
+				name: 'Baku Mutu Bawah PH',
+				data: [6,6,6,6,6,6,6,6,6,6],
+				visible: false
+			},			
+			{
+				name: 'BOD',
+				data: [3.9,5.5,16.2,10.5,6.8,10.5,3.30,29.76,8,7]
+			}, 
+			{
+				name: 'Baku Mutu BOD',
+				data: [3,3,3,3,3,3,3,3,3,3],
+				visible: false
+			},	
+			{
+				name: 'COD',
+				data: [9.8,12,34.6,22.4,14,22.4,36.74,98.23,16,14]
+			}, 
+			{
+				name: 'Baku Mutu COD',
+				data: [25,25,25,25,25,25,25,25,25,25],
+				visible: false
+			},	
+			{
+				name: 'Total Phosphate (PO₄₋)',
+				data: [0.148,0.561,0.109,0.175,0.171,0.175,0.55,0.46,0.02,0.04]
+			},
+			{
+				name: 'Baku Mutu Total Phosphate (PO₄₋)',
+				data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2],
+				visible: false
+			},
+			{
+				name: 'Total Coliform(Ribuan)',
+				data: [67,460,260,37,13,320,1.5,2.2,1.3,1.5]	
+			},
+			{
+				name: 'Baku Mutu Total Coliform(Ribuan)',
+				data: [5,5,5,5,5,5,5,5,5,5],
+				visible: false
+			}
+		]
+    });
+});
+</script>
+<script type="text/javascript">
+$(function () {
+    $('#cianten_hilir').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: 'Hasil Uji Mutu Air Sungai Cianten Hilir'
+        },
+        xAxis: {
+            categories: [
+						'2010-I Inlet', '2010-I outlet', '2010-II Inlet', '2010-II Outlet',
+						'2011-I outlet', '2011-II Outlet',
+						'2012-I outlet', '2012-II Outlet',
+						'2013-I outlet', '2013-II Outlet',
+						'2014-I Inlet', '2014-I outlet', '2014-II Inlet', '2014-II Outlet'
+						]
+        },
+		legend: 
+		{
+			layout : 'vertical',
+			align: 'right',
+			verticalAlign :'middle',
+			borderWidth : 0
+		},
+        yAxis: {
+            title: {
+                text: 'Hasil Uji'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+		
+        series: 
+		[
+			{
+				name: 'Total Suspended Solid(TSS)',
+				data: [16,22,31,31,34,31,22,16.2,12,194]
+			}, 
+			{
+				name: 'Baku Mutu TSS',
+				data: [50,50,50,50,50,50,50,50,50,50],
+				visible: false
+			},
+			{
+				name: 'Insitu(PH)',
+				data: [6.5,7.1,6.7,6.7,6.5,6.36,7.3,6.58,6,7.6]
+			},
+			{
+				name: 'Baku Mutu Atas PH',
+				data: [7,7,7,7,7,7,7,7,7,7],
+				visible: false
+			},	
+			{
+				name: 'Baku Mutu Bawah PH',
+				data: [6,6,6,6,6,6,6,6,6,6],
+				visible: false
+			},			
+			{
+				name: 'BOD',
+				data: [5.1,6.2,10,8.2,2.2,8.2,2.10,26.89,8,7]
+			}, 
+			{
+				name: 'Baku Mutu BOD',
+				data: [3,3,3,3,3,3,3,3,3,3],
+				visible: false
+			},	
+			{
+				name: 'COD',
+				data: [12.8,8,22,19.4,6.2,19.4,26.09,88.75,15,15]
+			}, 
+			{
+				name: 'Baku Mutu COD',
+				data: [25,25,25,25,25,25,25,25,25,25],
+				visible: false
+			},	
+			{
+				name: 'Total Phosphate (PO₄₋)',
+				data: [0.039,0.176,0.112,0.102,0.515,0.102,0.45,0.39,0.04,0.02]
+			},
+			{
+				name: 'Baku Mutu Total Phosphate (PO₄₋)',
+				data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2],
+				visible: false
+			},
+			
+			{
+				name: 'Total Coliform(Ribuan)',
+				data: [140,540,42,26,13,480,2.2,2.1,1.2,1.6]	
+			},
+			{
+				name: 'Baku Mutu Total Coliform(Ribuan)',
+				data: [5,5,5,5,5,5,5,5,5,5],
+				visible: false
+			}
+		]
+    });
+});
+</script>
+</head>
+<body>
+	
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<div id="cianten_hulu" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
+<br>
+<div id="cianten_tengah" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
+<br>
+<div id="cianten_hilir" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
+</body>
+</html>

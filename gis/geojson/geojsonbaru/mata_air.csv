@@ -1,0 +1,43 @@
+mata_air_id,tahun_pengamatan,kelurahan_id,lat,lng,keterangan,foto,alamat,icon_map
+1,2002-01-01,27,-6.58955000,106.80107000,<p>.</p>,,Kelurahan Sempur, Kecamatan Bogor Tengah,icon-mata_air.png
+2,2002-01-01,13,-6.65051000,106.83867000,<p>.</p>,,Kelurahan Harjasari, Kecamatan Bogor Selatan,icon-mata_air.png
+3,2002-01-01,12,-6.65222000,106.81498000,<p>.</p>,,Kelurahan Kertamaya, Kecamtan Bogor Selatan,icon-mata_air.png
+4,2002-01-01,3,-6.62306000,106.80554000,<p>.</p>,,Kelurahan Batu Tulis, Kecamatan Bogor Selatan,icon-mata_air.png
+5,2003-01-01,29,-6.59714000,106.77498000,<p>.</p>,,Kelurahan Panaragan, Kecamatan Bogor Tengah,icon-mata_air.png
+6,2005-01-01,6,-6.62626000,106.81850000,<p>.</p>,,Kelurahan Lawang Gintung, Kecamatan Bogor Selatan,icon-mata_air.png
+7,2005-01-01,15,-6.64045000,106.81223000,<p>.</p>,,Kelurahan Genteng, Kecamatan Bogor Selatan,icon-mata_air.png
+8,2006-01-01,17,-6.58043000,106.80056000,<p>.</p>,,Kelurahan Bantar Jati, Kecamatan Bogor Utara,icon-mata_air.png
+9,2006-01-01,4,-6.64881000,106.79369000,<p>.</p>,,Kelurahan Pamoyanan, Kecamatan Bogor Selatan,icon-mata_air.png
+10,2006-01-01,12,-6.65427000,106.81515000,<p>.</p>,,Kelurahan Kertamaya, Kecamatan Bogor Selatan,icon-mata_air.png
+11,2007-01-01,24,-6.54291000,106.82433000,<p>.</p>,,Kelurahan Ciparigi, Kecamatan Bogor Utara,icon-mata_air.png
+12,2007-01-01,39,-6.61053000,106.81678000,<p>.</p>,,Kelurahan Katulampa, Kecamatan Bogor Timur,icon-mata_air.png
+13,2007-01-01,40,-6.63432000,106.83292000,<p>.</p>,,Kelurahan Sindangsari, Kecamatan Bogor Timur,icon-mata_air.png
+14,2007-01-01,8,-6.64284000,106.78803000,<p>.</p>,,Kelurahan Mulyaharja, Kecamatan Bogor Selatan,icon-mata_air.png
+15,2007-01-01,66,-6.59339000,106.76880000,<p>.</p>,,Kelurahan Loji, Kecamatan Bogor Barat,icon-mata_air.png
+16,2007-01-01,57,-6.59348000,106.77914000,<p>.</p>,,Kelurahan Gunung Batu, Kecamatan Bogor Barat,icon-mata_air.png
+17,2008-01-01,56,-6.60891000,106.77584000,<p>.</p>,,Kelurahan Pasir Mulya, Kecamatan Bogor Barat,icon-mata_air.png
+18,2008-01-01,54,-6.60963000,106.77798000,<p>.</p>,,Kelurahan Pasir Kuda, Kecamatan Bogor Barat,icon-mata_air.png
+19,2009-01-01,18,-6.57979000,106.81249000,<p>.</p>,,Kelurahan Tegal Gundil, Kecamatan Bogor Utara,icon-mata_air.png
+20,2007-01-01,24,-6.54360000,106.82201000,<p>.</p>,,Kelurahan Ciparigi, Kecamatan Bogor Utara,icon-mata_air.png
+21,2010-01-01,32,-6.59947000,106.79163000,<p>.</p>,,Kelurahan Paledang, Kecamatan Bogor Tengah,icon-mata_air.png
+22,2007-01-01,22,-6.58640000,106.82253000,<p>.</p>,,Kelurahan Cimahpar, Kecamatan Bogor Utara,icon-mata_air.png
+23,2009-01-01,24,-6.54223000,106.82116000,<p>.</p>,,Kelurahan Ciparigi, Kecamatan Bogor Utara,icon-mata_air.png
+24,2010-01-01,39,-6.60925000,106.81901000,<p>.</p>,,Kelurahan Katulampa, Kecamatan Bogor Timur,icon-mata_air.png
+25,2010-01-01,3,-6.62477000,106.80704000,<p>.</p>,,Kelurahan Batu Tulis, Kecamatan Bogor Selatan,icon-mata_air.png
+26,2011-01-01,24,-6.54428000,106.82163000,<p>.</p>,,Kelurahan Ciparigi, Kecamatan Bogor Utara,icon-mata_air.png
+28,2011-01-01,4,-6.64898000,106.79399000,<p>.</p>,,Kelurahan Pamoyanan, Kecamatan Bogor Selatan,icon-mata_air.png
+29,2011-01-01,58,-6.56704000,106.75788000,<p>.</p>,,Kelurahan Bubulak, Kecamatan Bogor Barat,icon-mata_air.png
+30,2012-01-01,34,-6.60669000,106.79399000,<p>.</p>,,Kelurahan Gudang, Kecamatan Bogor Tengah,icon-mata_air.png
+31,2013-01-01,41,-6.62931000,106.82515000,<p>.</p>,,Kelurahan Sindangrasa, Kecamatan Bogor Timur,icon-mata_air.png
+32,2013-01-01,22,-6.58452000,106.81957000,<p>Sumur 1</p>,,Kelurahan Cimahpar, kecamatan Bogor Utara,icon-mata_air.png
+33,2013-01-01,22,-6.58674000,106.82300000,<p>Sumur 2</p>,,Kelurahan Cimahpar, Kecamatan Bogor Utara,icon-mata_air.png
+34,2011-01-01,24,-6.54343000,106.82197000,<p>.</p>,,Kelurahan Ciparigi, Kecamatan Bogor Utara,icon-mata_air.png35,2013-01-01,9,-6.61965000,106.78712000,<p>.</p>,,Kelurahan Cikaret, Kecamatan Bogor Selatan,icon-mata_air.png
+36,2013-01-01,5,-6.62605000,106.81090000,<p>.</p>,,Kelurahan Cipaku, Kecamatan Bogor Utara,icon-mata_air.png
+37,2013-01-01,49,-6.57109000,106.79875000,<p>Sumur 1</p>,,Kelurahan Mekarwangi, Kecamatan Tanah Sareal,icon-mata_air.png
+38,2013-01-01,49,-6.53180280,106.77748890,<p>Sumur 2</p>,,Kelurahan Mekarwangi, Kecamatan Tanah Sareal,icon-mata_air.png
+39,2014-01-01,64,-6.57252000,106.76940000,,,Kecamatan Bogor Barat, Kel.Cilendek Barat,icon-mata_air.png
+40,2014-01-01,62,-6.55346000,106.75895000,<p>Sumur 1</p>,,Kec.Bogor Barat kel.Semplak,icon-mata_air.png
+41,2015-10-29,62,-6.55393000,106.75962000,<p>Sumur 2</p>,,Kec.Bogor Barat Kel.Semplak,icon-mata_air.png
+42,2014-01-01,67,-6.55598000,106.77266000,,,Kel.Bogor Barat Kel.Curug Mekar,icon-mata_air.png
+43,2014-01-01,7,-6.62777000,106.79910000,,,Kec.Bogor Selatan Kel.Ranggamekar,icon-mata_air.png
+44,2016-02-24,66,-6.59808000,106.79078000,<p>di antaranya berada di kecaman bogor selatan, tanah sareal dan bogor tengah</p>,mata_air-571.jpg,Rencana pembangunan perlindungan sumber mata air d,icon-mata_air.png

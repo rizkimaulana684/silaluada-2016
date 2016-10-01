@@ -1,0 +1,720 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Hasil Uji Sungai Cidepit Hulu</title>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> 
+		
+		
+	<!--	<style type="text/css">${demo.css}	</style> -->
+		<script type="text/javascript">
+$(function () {
+    $('#cidepit_hulu').highcharts({
+        chart: {
+            type: 'line',
+			backgroundColor: "#e5efe9"
+        },
+        title: {
+            text: 'HASIL UJI SUNGAI CIDEPIT HULU TAHUN 2010 sd 2014'
+        },
+        subtitle: {
+            text: 'Parameter:Temperature, TDS, TSS,PH, BOD,COD, DO,Total Colifrom , Oil & fat'
+        },
+        xAxis: {
+            categories: ['2010-I', '2010-II', '2011-I', '2011-II', '2012-I', '2012-II', '2013-I', '2013-II', '2014-I', '2014-II']
+        },
+		legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlight: 'middle',
+			borderWidth: 0
+		},
+        yAxis: {
+            title: {
+                text: 'Hasil Pengujian'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+           name: 'Temperature',
+			data: [27.1,27.2,27.2,27.6,26.8,27.6,26.80,29.8,29.5,29]
+			}, {
+			name: 'Baku Mutu Temperatur',	
+			data: [3,3,3,3,3,3,3,3,3,3,],
+			visible: false
+			}, {
+			name: 'Total Dissolved Solids (TDS)',
+			data: [81,86,96,124,94,124,127,429,86,108]
+			}, {
+			name: 'Baku Mutu TDS(ratusan)',	
+			data: [1,1,1,1,1,1,1,1,1,1,1,],
+			visible: false
+			}, {
+			name: '	Total Suspended Solid (TSS)',
+			data: [24,56,32,36,59,36,34,19.5,50,104]
+			}, {
+			name: 'Baku Mutu TSS',	
+			data: [50,50,50,50,50,50,50,50,50,50,],
+			visible: false
+			}, {
+			name: 'Insitu (pH)',
+			data: [6.6,6.8,7,6.8,5.9,5.8,7.8,8.55,6.7,7.8]												
+			}, {
+			name: 'Baku Mutu pH',	
+			data: [7,7,7,7,7,7,7,7,7,7,],
+			visible: false
+			}, {
+			name: 'BOD',
+			data: [2.6,3.5,3.8,2.7,4.2,2.7,1,17.86,9,7]
+			}, {
+			name: 'Baku Mutu BOD',	
+			data: [2,2,2,2,2,2,2,2,2,2,],
+			visible: false
+			}, {
+			name: 'COD',
+			data: [6.6,12,8.6,5.6,12,5.6,4.85,58.99,17,13]
+			}, {
+			name: 'Baku Mutu COD',
+			data: [10,10,10,10,10,10,10,10,10,10,],
+			visible: false
+			}, {
+			name: 'Dissolved Oksigen (DO)',	
+			data: [6.3,6,4.4,5.7,4.2,1.1,0.20,6.5,4,4]
+			}, {
+			name: 'Baku Mutu DO',	
+			data: [6,6,6,6,6,6,6,6,6,6,],
+			visible: false
+			}, {
+			name: 'Total Coliform (ribuan)',
+			data: [30,37,7.2,41,28,71,1.9,2.2,1.5]
+			}, {
+			name: 'Total Coliform',	
+			data: [10,10,10,10,10,10,10,10,10,10],
+			visible: false
+			}, {
+			name: 'Oil & Fat',	
+			data: [0.9,0.9,0.9,0.9,0.9,0.9,0.8,0.1533,9,9]
+			}, {
+			name: 'Baku Mutu Oil & Fat (ribuan)',	
+			data: [10,10,10,10,10,10,10,10,10,10,],
+			visible: false
+		
+        }
+		]
+    });
+});
+		</script>
+		<script type="text/javascript">
+$(function () {
+    $('#cidepit_hulu2').highcharts({
+        chart: {
+            type: 'line',
+			backgroundColor: "#e5efe9"
+        },
+        title: {
+            text: 'Hasil Uji Air Sungai Cidepit hulu2'
+        },
+        subtitle: {
+            text: 'Parameter: PO4, NO3, B, Cd, Cr6,Cu, Pb, Zn, CN, F, NO2,Phenol'
+        },
+        xAxis: {
+            categories: ['2010-I', '2010-II', '2011-I', '2011-II', '2012-I', '2012-II', '2013-I', '2013-II', '2014-I', '2014-II']
+        },
+		legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlight: 'middle',
+			borderWidth: 0
+		},
+        yAxis: {
+            title: {
+                text: 'Hasil Pengujian'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+			
+			name: 'Phospate (PO4)',
+			data: [0.045,0.187,0.034,0.036,0.005,0.036,0.55,0.26,0.001,0.04]
+			}, {
+			name: 'Baku Mutu PO4',	
+			data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,],
+			visible: false
+			}, {
+			name: 'Nitrate (NO3)',
+			data: [0.06,0.03,0.11,0.33,1.51,0.09,1.0545,5.66,0.2,0.4]
+			}, {
+			name: 'Baku Mutu (NO3)',	
+			data: [10,10,10,10,10,10,10,10,10,10,],
+			visible: false
+			}, {
+			name: 'Boron (B)',
+			data: [0.05,0.05,0.05,0.08,0.05,0.05,0.09,0.01,0.1,0.1]
+			}, {
+			name: 'Baku Mutu (B)',	
+			data: [1,1,1,1,1,1,1,1,1,1,],
+			visible: false
+			}, {
+			name: 'Cadmium (Cd)',
+			data: [0.009,0.009,0.009,0.009,0.009,0.009,0.0010,0.0010,0.002,0.002]
+			}, {
+			name: 'Baku Mutu (Cd)',	
+			data: [0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,],
+			visible: false
+			}, {
+			name: 'Chrom Hexavalent (Cr6)',
+			data: [0.001,0.001,0.001,0.001,0.003,0.001,0.0010,0.002,0.001,0.001]
+			}, {
+			name: 'Baku Mutu Cr6)',	
+			data: [0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,],
+			visible: false
+			}, {
+			name: 'Copper (Cu)',
+			data: [0.003,0.003,0.003,0.003,0.003,0.003,0.0082,0.0082,0.006,0.006]
+			}, {
+			name: 'Baku Mutu (Cu)',	
+			data: [0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,],
+			visible: false	
+			}, {
+			name: 'Lead (Pb)',
+			data: [0.004,0.004,0.004,0.004,0.005,0.004,0.0136,0.0136,0.007,0.007]
+			}, {
+			name: 'Baku Mutu (Pb)',
+			data: [0.03,0.03,0.03,0.03,0.03,0.03,0.03,0.03,0.03,0.03,],
+			visible: false	
+			}, {
+			name: 'Zinc (Zn)',
+			data: [0.018,0.006,0.063,0.024,0.009,0.063,0.0054,0.0054,0.005,0.005]
+			}, {
+			name: 'Baku Mutu Zn',	
+			data: [0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,],
+			visible: false
+			}, {
+			name: '	Cyanide (CN)',
+			data: [0.326,0.002,0.002,0.002,0.002,0.002,0.002,0.004,0.001,0.01]
+			}, {
+			name: 'Baku Mutu CN',	
+			data: [0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,],
+			visible: false
+			}, {
+			name: 'Fluoride (F)',
+			data: [0.325,0.05,0.007,0.11,0.05,0.044,0.1418,0.44,1.1,0.3]
+			}, {
+			name: 'Baku Mutu F',	
+			data: [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,],
+			visible: false
+			}, {
+			name: 'Nitrit (NO2)',
+			data: [0.003,0.002,0.06,0.035,0.01,0.062,0.0618,0.06,0.02,0.003]
+			}, {
+			name: 'Baku Mutu NO2',
+			data: [0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,],
+			visible: false	
+			}, {
+			name: 'Phenol',
+			data: [0.002,0.002,0.008,0.002,0.008,0.002,0.19,0.17,0.09,0.09]
+			}, {
+			name: 'Baku Mutu Phenol',	
+			data: [1,1,1,1,1,1,1,1,1,1,],
+			visible: false
+		}	
+		]
+    });
+});
+		</script>	
+		<script type="text/javascript">
+$(function () {
+    $('#cidepit_tengah').highcharts({
+        chart: {
+            type: 'line',
+			backgroundColor: "#e5efe9"
+        },
+        title: {
+            text: 'HASIL UJI SUNGAI CIDEPIT TENGAH TAHUN 2010 sd 2014'
+        },
+        subtitle: {
+            text: 'Parameter:Temperature, TDS, TSS,PH, BOD, COD ,DO, Total Coliform(ribuan) , Oil & Fat'
+        },
+		legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlight: 'middle',
+			borderWidth: 0
+		},
+        xAxis: {
+            categories: ['2010-I', '2010-II', '2011-I', '2011-II', '2012-I', '2012-II', '2013-I', '2013-II', '2014-I', '2014-II']
+        },
+        yAxis: {
+            title: {
+                text: 'Hasil Pengujian'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+			name: 'Temperature',
+			data: [28.1,27.3,24.2,27.4,27.2,27.7,27.50,31.1,29.6,28.2]
+			}, {
+			name: 'Baku Mutu Temperatur',	
+			data: [3,3,3,3,3,3,3,3,3,3,],
+			visible: false
+			}, {
+			name: 'Total Dissolved Solids (TDS)',
+			data: [88,94,102,112,90,112,129,735,48,52]
+			}, {
+			name: 'Baku Mutu TDS(ratusan)',	
+			data: [1,1,1,1,1,1,1,1,1,1,1,],
+			visible: false
+			}, {
+			name: '	Total Suspended Solid (TSS)',
+			data: [50,42,74,40,45,145,4,51,62.3,60,]
+			}, {
+			name: 'Baku Mutu TSS',	
+			data: [50,50,50,50,50,50,50,50,50,50,],
+			visible: false
+			}, {
+			name: 'Insitu (pH)',
+			data: [7.8,6.7,6.6,6.6,5.7,6.53,7.5,8.21,7,7.5]												
+			}, {
+			name: 'Baku Mutu pH',	
+			data: [7,7,7,7,7,7,7,7,7,7,],
+			visible: false
+			}, {
+			name: 'BOD',
+			data: [3.8,4.2,6.4,4.7,4.6,4.7,3.00,16.57,11,7]
+			}, {
+			name: 'Baku Mutu BOD',	
+			data: [2,2,2,2,2,2,2,2,2,2,],
+			visible: false
+			}, {
+			name: 'COD',
+			data: [9.5,11,14.4,9.6,20,9.6,6.3,54.69,20,14]
+			}, {
+			name: 'Baku Mutu COD',
+			data: [10,10,10,10,10,10,10,10,10,10,],
+			visible: false
+			}, {
+			name: 'Dissolved Oksigen (DO)',	
+			data: [5.8,3.8,3,4.3,3.9,6.2,0.20,4,4]
+			}, {
+			name: 'Baku Mutu DO',	
+			data: [6,6,6,6,6,6,6,6,6,6,],
+			visible: false
+			}, {
+			name: 'Total Coliform (ribuan)',
+			data: [42,42,44,22,46,51,2.3,1.9,1.6,1.5]
+			}, {
+			name: 'Total Coliform',	
+			data: [10,10,10,10,10,10,10,10,10,10],
+			visible: false
+			}, {
+			name: 'Oil & Fat',
+			data: [0.9,0.9,0.9,0.9,0.9,0.9,0.2,0.1533,9,9]
+			}, {
+			name: 'Baku Mutu Oil & Fat (ribuan)',	
+			data: [10,10,10,10,10,10,10,10,10,10,],
+			visible: false
+			}	
+		]
+    });
+});
+		</script>	
+		<script type="text/javascript">
+$(function () {
+    $('#cidepit_tengah2').highcharts({
+        chart: {
+            type: 'line',
+			backgroundColor: "#e5efe9"
+        },
+        title: {
+            text: 'HASIL UJI SUNGAI CIDEPIT TENGAH TAHUN 2010 sd 2014'
+        },
+        subtitle: {
+            text: 'Parameter:PO4, B, NO3, Cd, Cr6, Cu, Pb, Zn, CN, F, NO2 ,Phenol'
+        },
+		legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlight: 'middle',
+			borderWidth: 0
+		},
+        xAxis: {
+            categories: ['2010-I', '2010-II', '2011-I', '2011-II', '2012-I', '2012-II', '2013-I', '2013-II', '2014-I', '2014-II', '2015-I', '2015-II']
+        },
+        yAxis: {
+            title: {
+                text: 'Hasil Pengujian'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+			name: 'Phospate (PO4)',
+			data: [0.053,0.257,0.072,0.074,0.434,0.074,0.44,0.14,0.01,0.02]
+			}, {
+			name: 'Baku Mutu PO4',	
+			data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,],
+			visible: false
+			}, {
+			name: 'Nitrate (NO3)',
+			data: [0.05,0.03,0.15,0.18,1.54,0.18,0.5717,4.44,0.2,3]
+			}, {
+			name: 'Baku Mutu (NO3)',	
+			data: [10,10,10,10,10,10,10,10,10,10,],
+			visible: false
+			}, {
+			name: 'Boron (B)',
+			data: [0.05,0.05,0.10,0.09,0.05,0.09,0.09,0.01,0.1,0.1]
+			}, {
+			name: 'Baku Mutu (B)',	
+			data: [1,1,1,1,1,1,1,1,1,1,],
+			visible: false
+			}, {
+			name: 'Cadmium (Cd)',
+			data: [0.009,0.009,0.009,0.009,0.009,0.009,0.0010,0.0010,0.002,0.002]
+			}, {
+			name: 'Baku Mutu (Cd)',	
+			data: [0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,],
+			visible: false
+			}, {
+			name: 'Chrom Hexavalent (Cr6)',
+			data: [0.001,0.001,0.001,0.001,0.003,0.001,0.0039,0.008,0.001,0.001]
+			}, {
+			name: 'Baku Mutu Cr6)',	
+			data: [0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,],
+			visible: false
+			}, {
+			name: 'Copper (Cu)',
+			data: [0.003,0.003,0.003,0.003,0.003,0.003,0.0082,0.0082,0.006,0.006]
+			}, {
+			name: 'Baku Mutu (Cu)',	
+			data: [0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,],
+			visible: false	
+			}, {
+			name: 'Lead (Pb)',
+			data: [0.004,0.004,0.004,0.004,0.005,0.004,0.0136,0.0136,0.007,0.007]
+			}, {
+			name: 'Baku Mutu (Pb)',
+			data: [0.03,0.03,0.03,0.03,0.03,0.03,0.03,0.03,0.03,0.03,],
+			visible: false	
+			}, {
+			name: 'Zinc (Zn)',
+			data: [0.054,0.003,0.099,0.112,0.08,0.112,0.0054,0.0054,0.004,0.004]
+			}, {
+			name: 'Baku Mutu Zn',	
+			data: [0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,],
+			visible: false	
+			}, {
+			name: '	Cyanide (CN)',
+			data: [0.002,0.002,0.002,0.002,0.002,0.002,0.007,0.004,0.001,0.01]
+			}, {
+			name: 'Baku Mutu CN',	
+			data: [0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,],
+			visible: false
+			}, {
+			name: 'Fluoride (F)',
+			data: [0.05,0.05,0.15,0.112,0.05,0.112,0.1418,0.59,0.02,0.1]
+			}, {
+			name: 'Baku Mutu F',	
+			data: [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,],
+			visible: false
+			}, {
+			name: 'Nitrit (NO2)',
+			data: [0.011,0.002,0.003,0.012,0.002,0.012,0.0780,0.06,0.02,0.01]
+			}, {
+			name: 'Baku Mutu NO2',
+			data: [0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,],
+			visible: false	
+			}, {
+			name: 'Phenol',
+			data: [0.002,0.002,0.009,0.002,0.002,0.002,0.27,0.33,0.09,0.09]
+			}, {
+			name: 'Baku Mutu Phenol',	
+			data: [1,1,1,1,1,1,1,1,1,1,],
+			visible: false
+		}	
+		]
+    });
+});
+		</script>	
+		<script type="text/javascript">
+$(function () {
+    $('#cidepit_hilir').highcharts({
+        chart: {
+            type: 'line',
+			backgroundColor: "#e5efe9"
+        },
+        title: {
+            text: 'HASIL UJI SUNGAI CIDEPIT HILIR TAHUN 2010 sd 2014'
+        },
+        subtitle: {
+            text: 'Parameter:Temperature, TDS, TSS, PH, BOD, COD ,DO , Oil & Fat , Total Colifrom'
+        },
+        xAxis: {
+            categories: ['2010-I', '2010-II', '2011-I', '2011-II', '2012-I', '2012-II', '2013-I', '2013-II', '2014-I', '2014-II']
+        },
+        yAxis: {
+            title: {
+                text: 'Hasil Pengujian'
+            }
+        },
+		legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlight: 'middle',
+			borderWidth: 0
+		},
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+      		name: 'Temperature',	
+			data: [28.2,27.3,24.7,27.2,24,27.2,27.50,29.9,29.5,28.5]
+			}, {
+			name: 'Baku Mutu Temperatur',	
+			data: [3,3,3,3,3,3,3,3,3,3,],
+			visible: false
+			}, {
+			name: 'Total Dissolved Solids (TDS)',
+			data: [196,96,112,102,102,102,131,537,78,132]
+			}, {
+			name: 'Baku Mutu TDS(ratusan)',	
+			data: [1,1,1,1,1,1,1,1,1,1,1,],
+			visible: false
+			}, {
+			name: '	Total Suspended Solid (TSS)',
+			data: [62,100,32,34,38,34,25,12.2,222,10]
+			}, {
+			name: 'Baku Mutu TSS',	
+			data: [50,50,50,50,50,50,50,50,50,50,],
+			visible: false
+			}, {
+			name: 'Insitu (pH)',
+			data: [6.4,6.6,6.9,6.9,6.49,6.41,7.6,7.32,6.8,7]												
+			}, {
+			name: 'Baku Mutu pH',	
+			data: [7,7,7,7,7,7,7,7,7,7,],
+			visible: false
+			}, {
+			name: 'BOD',
+			data: [4.3,4.4,10,4,2.6,4,3.30,21.17,10,6]
+			}, {
+			name: 'Baku Mutu BOD',
+			data: [2,2,2,2,2,2,2,2,2,2,],
+			visible: false
+			}, {
+			name: 'COD',
+			data: [11,12,23.6,8.7,7.2,8.7,6.53,69.89,19,11]
+			}, {
+			name: 'Baku Mutu COD',
+			data: [10,10,10,10,10,10,10,10,10,10,],
+			visible: false
+			}, {
+			name: 'Dissolved Oksigen (DO)',
+			data: [4.9,3.9,4.2,6,5.4,4.7,0.10,5.6,4,4]
+			}, {
+			name: 'Baku Mutu DO',	
+			data: [6,6,6,6,6,6,6,6,6,6,],
+			visible: false
+			}, {
+			name: 'Total Coliform (ribuan)',
+			data: [66,170,36,24,47,47,2.1,2.2,1.6,9]
+			}, {
+			name: 'Total Coliform',	
+			data: [10,10,10,10,10,10,10,10,10,10],
+			visible: false
+			}, {
+			name: 'Oil & Fat',
+			data: [0.9,0.9,,0.3,0.3,0.3,0.5,0.1533,9,9]
+			}, {
+			name: 'Baku Mutu Oil & Fat (ribuan)',	
+			data: [10,10,10,10,10,10,10,10,10,10,],
+			visible: false
+        }
+		]
+    });
+});
+		</script>	
+<script type="text/javascript">
+$(function () {
+    $('#cidepit_hilir2').highcharts({
+        chart: {
+            type: 'line',
+			backgroundColor: "#e5efe9"
+        },
+        title: {
+            text: 'HASIL UJI SUNGAI CIDEPIT HILIR TAHUN 2010 sd 2014'
+        },
+        subtitle: {
+            text: 'Parameter:PO4, NO3, B, Cd, Cr6, Cu, Pb, Zn, CN, F, NO2 ,Phenol'
+        },
+        xAxis: {
+            categories: ['2010-I', '2010-II', '2011-I', '2011-II', '2012-I', '2012-II', '2013-I', '2013-II', '2014-I', '2014-II']
+        },
+        yAxis: {
+            title: {
+                text: 'Hasil Pengujian'
+            }
+        },
+		legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlight: 'middle',
+			borderWidth: 0
+		},
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+      		name: 'Phospate (PO4)',
+			data: [0.045,0.226,0.027,0.028,0.221,0.028,0.57,0.16,0.02,0.04]
+			}, {
+			name: 'Baku Mutu PO4',	
+			data: [0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,],
+			visible: false
+			}, {
+			name: 'Nitrate (NO3)',
+			data: [0.03,0.04,0.06,0.062,0.72,0.062,1.3037,3.68,1,04]
+			}, {
+			name: 'Baku Mutu (NO3)',	
+			data: [10,10,10,10,10,10,10,10,10,10,],
+			visible: false
+			}, {
+			name: 'Boron (B)',
+			data: [0.05,0.05,0.2,0.2,0.05,0.2,0.09,0.01,0.1,0.1]
+			}, {
+			name: 'Baku Mutu (B)',	
+			data: [1,1,1,1,1,1,1,1,1,1,],
+			visible: false
+			}, {
+			name: 'Cadmium (Cd)',
+			data: [0.009,0.009,0.009,0.009,0.009,0.009,0.0010,0.0010,0.002,0.002]
+			}, {
+			name: 'Baku Mutu (Cd)',	
+			data: [0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,],
+			visible: false
+			}, {
+			name: 'Chrom Hexavalent (Cr6)',
+			data: [0.001,0.001,0.001,0.001,0.001,0.001,0.0029,0.009,0.001,0.001]
+			}, {
+			name: 'Baku Mutu Cr6)',	
+			data: [0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,],
+			visible: false
+			}, {
+			name: 'Copper (Cu)',
+			data: [0.003,0.003,0.003,0.003,0.002,0.003,0.0082,0.0082,0.006,0.006]
+			}, {
+			name: 'Baku Mutu (Cu)',	
+			data: [0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,],
+			visible: false	
+			}, {
+			name: 'Lead (Pb)',
+			data: [0.004,0.004,0.004,0.004,0.004,0.004,0.0136,0.0136,0.007,0.007]
+			}, {
+			name: 'Baku Mutu (Pb)',
+			data: [0.03,0.03,0.03,0.03,0.03,0.03,0.03,0.03,0.03,0.03,],
+			visible: false	
+			}, {
+			name: 'Zinc (Zn)',
+			data: [0.015,0.003,0.017,0.018,0.054,0.018,0.0054,0.0054,0.004,0.004]
+			}, {
+			name: 'Baku Mutu Zn',	
+			data: [0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,0.05,],
+			visible: false	
+			}, {
+			name: '	Cyanide (CN)',
+			data: [0.002,0.002,0.002,0.002,0.002,0.002,0.004,0.004,0.001,0.01]
+			}, {
+			name: 'Baku Mutu CN',	
+			data: [0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,],
+			visible: false
+			}, {
+			name: 'Fluoride (F)',
+			data: [0.05,0.05,0.23,0.198,0.082,0.198,0.1418,0.39,0.4,0.2]
+			}, {
+			name: 'Baku Mutu F',	
+			data: [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,],
+			visible: false
+			}, {
+			name: 'Nitrit (NO2)',
+			data: [0.003,0.002,0.005,0.015,0.015,0.015,0.0398,0.06,0.01,0.001]
+			}, {
+			name: 'Baku Mutu NO2',
+			data: [0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,],
+			visible: false	
+			}, {
+			name: 'Phenol',
+			data: [0.002,0.019,0.002,0.002,0.002,0.002,0.23,0.23,0.09,0.09]
+			}, {
+			name: 'Baku Mutu Phenol',	
+			data: [1,1,1,1,1,1,1,1,1,1,],
+			visible: false
+			}
+		]
+    });
+});
+		</script>	
+					
+	</head>
+	<body>
+	
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<!--
+<script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+<script src="js/modules/data.js"></script>
+-->
+<div id="cidepit_hulu" style="min-width: 310px; height: 200px; margin: 5px, 0px, 0px, 0px"></div>
+<br>
+<div id="cidepit_hulu2" style="min-width: 310px; height: 200px; margin: 5px, 0px, 0px, 0px"></div>
+<br>
+<div id="cidepit_tengah" style="min-width: 310px; height: 200px; margin: 5px, 0px, 0px, 0px"></div>
+<br>
+<div id="cidepit_tengah2" style="min-width: 310px; height: 200px; margin: 5px, 0px, 0px, 0px"></div>
+<br>
+<div id="cidepit_hilir" style="min-width: 310px; height: 200px; margin: 5px, 0px, 0px, 0px"></div>
+<br>
+<div id="cidepit_hilir2" style="min-width: 310px; height: 200px; margin: 5px, 0px, 0px, 0px"></div>
+<br>
+
+	</body>
+</html>
