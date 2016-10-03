@@ -21,7 +21,7 @@
 					<div class="col-md-8 col-sm-8 right-padding-5">
 						<div style="background:#fff; padding:3%;box-radius:50px;">
 							<div class="clearfix" align="justify">
-								<form method="POST" action="<?php echo site_url('upload_syarat/simpan')?>" enctype="multipart/form-data">
+								<form method="POST" id="urus-perizinan" action="<?php echo site_url('upload_syarat/simpan/'.$permohonan_id)?>" enctype="multipart/form-data">
 								    <input type="hidden" value="<?php echo $permohonan_id; ?>" name="permohonan_id">
 								    <input type="hidden" value="<?php echo $pemohon_id; ?>" name="pemohon_id">
 								    <input type="hidden" value="<?php echo $perusahaan_id; ?>" name="perusahaan_id">
@@ -103,12 +103,22 @@
 									    		?>
 									    			<tr>
 									    				<td><?php echo $no ?></td>
-									    				<td><?php echo $r->persyaratan?></td>
+									    				<td>
+									    					<?php echo $r->persyaratan.' '.$r->persyaratan_id.' '.$r->jenisizin_id. ' '.$permohonan_id; ?>
+
+									    					<?php 
+									    					$check_dokumen = $check_upload_syarat($permohonan_id, $r->persyaratan_id);
+									    					$dokumennya = ($check_dokumen) ? $check_dokumen->dokumen_id : '';
+									    					?>
+
+									    				</td>
 									    				<td>:</td>
 									    				<td>
-									    					<input type="text" id="dok_<?php echo $no; ?>" name="dok_id[]" required>
-									    					<input type="text" value="<?php echo $r->persyaratan_id ?>" name="persyaratan_id[]">
+									    					<input class="dokumen-perizinan" type="hidden" id="dok_<?php echo $no; ?>" name="dok_id[]" value="<?php echo $dokumennya; ?>" required>
+									    					<input class="persyaratan-perizinan" type="hidden" value="<?php echo $r->persyaratan_id ?>" name="persyaratan_id[]">
 									    					<span id="file_name<?php echo $no; ?>">
+									    						<?php echo $nama_dokumen($dokumennya); ?>
+									    					</span>
 									    					</td>
 									    				<td>
 									    					<a class="btn btn-success" onclick="show_modal($('#dok_<?php echo $no; ?>'),$('#file_name<?php echo $no; ?>'))" data-toggle="modal" data-target="#myModal" >Pilih File</a>
@@ -121,7 +131,7 @@
 								</form>
 							</div>
 						</div>
-					</div>
+					<!-- </div> -->
 	<!-- END KONTEN -->
 							    		<!-- MODAL -->
 										  <div class="modal fade" id="myModal" role="dialog">
@@ -167,16 +177,29 @@ $(document).ready(function(){
 
 	$.post("<?php echo site_url('upload_syarat/dokumen') ?>",{perusahaan_id:$("#perus option:selected").val() }, function(dokumen){
 					// alert(#optionPemohon.val);
-					console.log("ini dok =>",dokumen);
+					//console.log("ini dok =>",dokumen);
 					$("#dokumen").html(dokumen);
 	});
 
 	$("#perus").change(function(){
 				$.post("<?php echo site_url('upload_syarat/dokumen') ?>",{perusahaan_id:$("#perus option:selected").val() }, function(dokumen){
 					// alert(#optionPemohon.val);
-					console.log("ini dok =>",dokumen);
+					//console.log("ini dok =>",dokumen);
 					$("#dokumen").html(dokumen);
 				});
 			}); 
 });
+</script>
+
+
+<link rel="stylesheet" href="<?php echo base_url('assets/plugins/toastr/toastr.min.css'); ?>" type="text/css">
+<script type="text/javascript" src="<?php echo base_url('asset_app/js/perizinan/index.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/plugins/toastr/toastr.min.js'); ?>"></script>
+<script type="text/javascript">
+
+	var formEl = 'form#urus-perizinan';
+	var dokEl = '.dokumen-perizinan';
+	var syaratEl = '.persyaratan-perizinan';
+
+	window.PERIZINAN.handleSavePerizinan(formEl, dokEl, syaratEl);
 </script>

@@ -78,14 +78,7 @@ $db['default'] = array(
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
-	'database' => 'bplhkotabogor',
-
-//	'hostname' => '172.16.9.110',
-//	'username' => 'developbplh',
-//	'password' => 'bogor2016',
-//	'database' => 'developbplh',
-
-
+	'database' => '',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
