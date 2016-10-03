@@ -15,6 +15,7 @@
     <link href="<?php echo base_url()?>assets/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url()?>assets/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url()?>assets/css/admin.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="<?php echo base_url('assets/style.css')?>" type="text/css" />
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -128,7 +129,7 @@
           <ul class="sidebar-menu">
             <li class="header">MAIN MENU</li>
             <li><a href="<?php echo site_url('adminweb/')?>"><i class="fa fa-dashboard "></i> Dashboard</a></li>
-
+			<?php if ($this->session->userdata('userlvl')==0){?>
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-list"></i> <span>Data Master</span> <i class="fa fa-angle-left pull-right"></i>
@@ -215,17 +216,31 @@
                 <i class="fa fa-bar-chart-o"></i> <span> Chart</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
+			  
               <ul class="treeview-menu">
+			  
                 <li><a href="#"><i class="fa fa-circle-o"></i> Pengujian Air Sungai <i class="fa fa-angle-left pull-right"></i></a>
                     <ul class="treeview-menu">
-                      <li><a href="<?php echo site_url('adm_sungai/chart')?>"><i class="fa fa-circle-o"></i> Chart Perlokasi</a></li>
-                      <li><a href="<?php echo site_url('adm_sungai/chart_tahun')?>"><i class="fa fa-circle-o"></i> Chart Pertahun</a></li>
+					
+                      <li><a href="<?php echo site_url('adm_sungai/cibalok')?>"><i class="fa fa-circle-o"></i> Sungai Cibalok</a></li>
+					  <li><a href="<?php echo site_url('adm_sungai/cidepit')?>"><i class="fa fa-circle-o"></i> Sungai Cidepit</a></li>
+					  <li><a href="<?php echo site_url('adm_sungai/ciliwung')?>"><i class="fa fa-circle-o"></i> Sungai Ciliwung</a></li>
+					  <li><a href="<?php echo site_url('adm_sungai/ciluar')?>"><i class="fa fa-circle-o"></i> Sungai Ciluar</a></li>
+					  <li><a href="<?php echo site_url('adm_sungai/cipakancilan')?>"><i class="fa fa-circle-o"></i> Sungai Cipakancilan</a></li>
+					  <li><a href="<?php echo site_url('adm_sungai/ciparigi')?>"><i class="fa fa-circle-o"></i> Sungai Ciparigi</a></li>
+					  <li><a href="<?php echo site_url('adm_sungai/cisadane')?>"><i class="fa fa-circle-o"></i> Sungai Cisadane</a></li>
+					  <li><a href="<?php echo site_url('adm_sungai/cisindang_barang')?>"><i class="fa fa-circle-o"></i> Sungai Cisindang Barang</a></li>
+					  <li><a href="<?php echo site_url('adm_sungai/cianten')?>"><i class="fa fa-circle-o"></i> Sungai Cianten</a></li>
                     </ul>
                 </li>
                 <li><a href="#"><i class="fa fa-circle-o"></i> Pengujian Air Situ <i class="fa fa-angle-left pull-right"></i></a>
                   <ul class="treeview-menu">
-                      <li><a href="<?php echo site_url('adm_situ/chart')?>"><i class="fa fa-circle-o"></i> Chart Perlokasi</a></li>
-                      <li><a href="<?php echo site_url('adm_situ/chart_tahun')?>"><i class="fa fa-circle-o"></i> Chart Pertahun</a></li>
+				  
+				  <li><a href="<?php echo site_url('adm_situ/gede')?>"><i class="fa fa-circle-o"></i> Situ Gede</a></li>
+				  <li><a href="<?php echo site_url('adm_situ/panjang')?>"><i class="fa fa-circle-o"></i> Situ Panjang</a></li>
+				  <li><a href="<?php echo site_url('adm_situ/anggalena')?>"><i class="fa fa-circle-o"></i> Situ Anggalena</a></li>
+                     <!-- <li><a href="<?php echo site_url('adm_situ/chart')?>"><i class="fa fa-circle-o"></i> Chart Perlokasi</a></li>
+                      <li><a href="<?php echo site_url('adm_situ/chart_tahun')?>"><i class="fa fa-circle-o"></i> Chart Pertahun</a></li>-->
                     </ul>
                 </li>
                 <li><a href="#"><i class="fa fa-circle-o"></i> Pengujian Air Sumur <i class="fa fa-angle-left pull-right"></i></a>
@@ -250,7 +265,7 @@
             </li>
 
 
-          <!--  <li class="treeview">
+          <!--<li class="treeview">
               <a href="#">
                 <i class="fa fa-archive"></i> <span> Perizinan</span>
                 <i class="fa fa-angle-left pull-right"></i>
@@ -262,15 +277,41 @@
                 <li><a href="<?php echo site_url('adm_uklupl')?>"><i class="fa fa-circle-o"></i> UKL-UPL</a></li>
                 <li><a href="<?php echo site_url('adm_izin_lc')?>"><i class="fa fa-circle-o"></i> Izin Limbah Cair</a></li>
               </ul>
-            </li>-->
+            </li> -->
+		
+			<li class="treeview">
+              <a href="#">
+                <i class="fa fa-archive"></i> <span> Perizinan</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i> Pendaftaraan Perizinan <i class="fa fa-angle-left pull-right"></i></a>
+                    <ul class="treeview-menu">
+					<li><a href="<?php echo site_url('Adm_perizinan_sppl')?>"><i class="fa fa-circle-o"></i> Pendaftaran SPPL Baru</a></li>
+					<li><a href="<?php echo site_url('Adm_perizinan_amdal')?>"><i class="fa fa-circle-o"></i> Pendaftaran AMDAL Baru</a></li>
+					<li><a href="<?php echo site_url('Adm_perizinan_uklupl')?>"><i class="fa fa-circle-o"></i> Pendaftaran UKL-UPL Baru</a></li>
+					<li><a href="<?php echo site_url('adm_izin_lc')?>"><i class="fa fa-circle-o"></i> Izin Limbah Cair</a></li>
+               </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Perizinan <i class="fa fa-angle-left pull-right"></i></a>
+                  <ul class="treeview-menu">
+                      <li><a href="<?php echo site_url('adm_sppl')?>"><i class="fa fa-circle-o"></i> Data SPPL</a></li>
+					<li><a href="<?php echo site_url('adm_amdal')?>"><i class="fa fa-circle-o"></i> Data AMDAL </a></li>
+					<li><a href="<?php echo site_url('adm_uklupl')?>"><i class="fa fa-circle-o"></i>Data  UKL-UPL</a></li>
+                    </ul>
+                </li>
+                
+              </ul>
+            </li>
+			
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-list"></i> <span>Import Data Pengujian</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="<?php echo site_url('adm_csv') ?>"><i class="fa fa-file"></i> Pengujian Sungai</a></li>
+                <li><a href="<?php echo site_url('adm_pengujian_sungai') ?>"><i class="fa fa-file"></i> Pengujian Sungai</a></li>
                 <li><a href="<?php echo site_url('adm_csv') ?>"><i class="fa fa-group"></i> Pengujian Tanah</a></li>
-                <li><a href="<?php echo site_url('adm_csv') ?>"><i class="fa fa-group"></i> Pengujian Situ</a></li>
+                <li><a href="<?php echo site_url('adm_pengujian_situ') ?>"><i class="fa fa-group"></i> Pengujian Situ</a></li>
                 <li><a href="<?php echo site_url('adm_csv') ?>"><i class="fa fa-group"></i> Pengujian Limbah</a></li>
                
               </ul>
@@ -278,12 +319,45 @@
            
 			
 
-            <li><a href="<?php echo site_url('album_galeri')?>"><i class="fa fa-file"></i> Album</a></li>
-            <li><a href="<?php echo site_url('adm_galeri')?>"><i class="fa fa-star"></i> Galeri</a></li>
-            <li><a href="<?php echo site_url('banner')?>"><i class="fa fa-picture-o"></i> Banner</a></li>
-            <li><a href="<?php echo site_url('slide')?>"><i class="fa fa-arrows-alt"></i> Slide Show</a></li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-film"></i> <span>Fitur</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="<?php echo site_url('album_galeri')?>"><i class="fa fa-file"></i> Album</a></li>
+				<li><a href="<?php echo site_url('adm_galeri')?>"><i class="fa fa-star"></i> Galeri</a></li>
+				<li><a href="<?php echo site_url('banner')?>"><i class="fa fa-picture-o"></i> Banner</a></li>
+				<li><a href="<?php echo site_url('slide')?>"><i class="fa fa-arrows-alt"></i> Slide Show</a></li>
+               
+              </ul>
+            </li>
             <li><a href="<?php echo site_url('konfig') ?>"><i class="fa fa-cogs"></i> Pengaturan</a></li>
-            
+            <?php } else {?>
+			<li class="treeview">
+              <a href="#">
+                <i class="fa fa-archive"></i> <span> Perizinan</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i> Pendaftaraan Perizinan <i class="fa fa-angle-left pull-right"></i></a>
+                    <ul class="treeview-menu">
+					<li><a href="<?php echo site_url('Adm_perizinan_sppl')?>"><i class="fa fa-circle-o"></i> Pendaftaran SPPL Baru</a></li>
+					<li><a href="<?php echo site_url('Adm_perizinan_amdal')?>"><i class="fa fa-circle-o"></i> Pendaftaran AMDAL Baru</a></li>
+					<li><a href="<?php echo site_url('Adm_perizinan_uklupl')?>"><i class="fa fa-circle-o"></i> Pendaftaran UKL-UPL Baru</a></li>
+					<li><a href="<?php echo site_url('adm_izin_lc')?>"><i class="fa fa-circle-o"></i> Izin Limbah Cair</a></li>
+               </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Perizinan <i class="fa fa-angle-left pull-right"></i></a>
+                  <ul class="treeview-menu">
+                      <li><a href="<?php echo site_url('adm_sppl')?>"><i class="fa fa-circle-o"></i> Data SPPL</a></li>
+					<li><a href="<?php echo site_url('adm_amdal')?>"><i class="fa fa-circle-o"></i> Data AMDAL </a></li>
+					<li><a href="<?php echo site_url('adm_uklupl')?>"><i class="fa fa-circle-o"></i>Data  UKL-UPL</a></li>
+                    </ul>
+                </li>
+                
+              </ul>
+            </li>
+			<?php } ?>
           </ul>
           
         </section>
